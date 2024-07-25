@@ -357,6 +357,36 @@ body ::-webkit-scrollbar {
         transform: rotate(360deg); /* Rotate to 360 degrees */
     }
 }
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .university {
+        flex-direction: column; /* Arrange items in a column on smaller screens */
+        align-items: center; /* Center align items */
+    }
+
+    .university img {
+        max-width: 100px; /* Limit logo width on smaller screens */
+    }
+
+    .univ_description {
+        text-align: center; /* Center text on smaller screens */
+        width: 100%; /* Full width for description */
+    }
+
+    .univ_description h2 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+
+    .univ_description h3 {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .univ_description p {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
+
 /*------------education completed--------------*/
 
 /*------------resume--------------*/
