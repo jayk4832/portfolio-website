@@ -66,18 +66,18 @@ ul {
 /*------------home--------------*/
 
 html, body {
-    height: 100%; /* Ensures the body takes up the full viewport height */
-    margin: 0; /* Removes default margin around the body */
+    height: 100%; 
+    margin: 0; 
     overflow-x: hidden;
 }
 
 #home {
-    display: flex; /* Enables Flexbox layout */
+    display: flex; 
     flex-direction: column;
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
-    height: 100vh; /* Sets the section height to 100% of the viewport height */
-    width: 100vw; /* Sets the section width to 100% of the viewport width */
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    width: 100vw; 
     text-align: center;
     margin-bottom: 10px;
 }
@@ -90,8 +90,8 @@ html, body {
 }
 
 #home p {
-    margin: 10px 0 0; /* Adds some space above the paragraph */
-    font-size: 1.5em; /* Adjust the font size as needed */
+    margin: 10px 0 0; 
+    font-size: 1.5em; 
     color: white;
 }
 
@@ -101,12 +101,12 @@ html, body {
 
 /* Ensure the section takes up full height and is centered */
 #projects {
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Arrange children in a column */
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    min-height: 100vh; /* Ensure it takes at least the full viewport height */
-    padding: 6rem 0; /* Add padding for spacing */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh; 
+    padding: 6rem 0;
 }
 
 /* Rainbow gradient animation for the h1 */
@@ -117,8 +117,8 @@ html, body {
 } */
 
 #projects h1 {
-    color: white; /* Fallback color */
-    font-size: 2rem; /* Font size */
+    color: white; 
+    font-size: 2rem; 
     /* background: linear-gradient(270deg, #ff0080, #ff8c00, #ffec00, #8cff00, #00ff8c, #00ecff, #0080ff, #8c00ff); */
     /* background-size: 1600% 1600%;
     -webkit-background-clip: text;
@@ -129,28 +129,28 @@ html, body {
 
 /* Container for the project cards */
 .project_container {
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Arrange children in a column */
-    width: 100%; /* Take full width */
-    max-width: 900px; /* Limit the maximum width */
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+    max-width: 900px; 
     min-width: none;
-    margin: 0 auto; /* Center container */
+    margin: 0 auto; 
 }
 
 /* Each project card styling */
 .project {
-    display: flex; /* Use flexbox for inner content alignment */
-    flex-direction: row; /* Arrange content vertically */
-    align-items: center; /* Center horizontally */
-    background: black; /* White background for cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-    margin: 1rem 0; /* Space between cards */
-    padding: 1rem; /* Padding inside cards */
-    border-radius: 20px; /* Rounded corners */
-    width: 100%; /* Full width of the container */
-    box-sizing: border-box; /* Include padding in width calculation */
-    transition: background-color 0.5s ease; /* Smooth transition for hover effect */
-    overflow: hidden; /* Hide parts of the image outside the card */
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    background: black; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 1rem 0;
+    padding: 1rem; 
+    border-radius: 20px; 
+    width: 100%; 
+    box-sizing: border-box;
+    transition: background-color 0.5s ease; 
+    overflow: hidden; 
 }
 
 /* Hover effect for project cards */
@@ -160,40 +160,40 @@ html, body {
 
 /* Ensure images fill the project card without changing the card size */
 .project img {
-    width: 60%; /* Full width of the card */
-    height: 350px; /* Set a fixed height */
-    object-fit: cover; /* Crop the image to fit the fixed dimensions */
-    border-radius: 8px; /* Round top corners */
-    transform: translateX(20%) translateY(10%) rotate(0deg); /* Initially show only half of the image */
-    transition: transform 0.5s ease; /* Smooth transition for the transform property */
+    width: 60%; 
+    height: 350px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    transform: translateX(20%) translateY(10%) rotate(0deg); 
+    transition: transform 0.5s ease; 
 }
 
 /* Slide image in to show 85% on hover */
 .project:hover img {
-    transform: translateX(10%) translateY(10%) rotate(-5deg); /* Adjust to show 85% of the image */
+    transform: translateX(10%) translateY(10%) rotate(-5deg); 
 }
 
 /* Style for the project description */
 .project_description {
-    padding: 1rem; /* Padding around text */
-    text-align: left; /* Center text */
+    padding: 1rem; 
+    text-align: left; 
     width: 50%;
     color: white;
 }
 
 .project_description h2 {
-    margin: 0.5rem 0; /* Margin around heading */
-    font-size: 1.5rem; /* Heading size */
+    margin: 0.5rem 0; 
+    font-size: 1.5rem; 
 }
 
 .project_description h3 {
-    margin: 0.5rem 0; /* Margin around subheading */
-    font-size: 1.2rem; /* Subheading size */
+    margin: 0.5rem 0; 
+    font-size: 1.2rem; 
 }
 
 .project_description p {
-    margin: 0.5rem 0; /* Margin around paragraph */
-    font-size: 1rem; /* Paragraph size */
+    margin: 0.5rem 0; 
+    font-size: 1rem; 
 }
 
 /*------------project completed--------------*/
@@ -205,62 +205,62 @@ body ::-webkit-scrollbar {
 }
 
 body ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0); /* Transparent thumb */
+    background: rgba(0, 0, 0, 0); 
 }
 
 body ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0); /* Transparent track */
+    background: rgba(0, 0, 0, 0); 
 }
 
 /* Custom scrollbar styles for Firefox */
 body {
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    scrollbar-width: none; 
 }
 
 /* Hide scrollbar for other WebKit-based browsers */
 body ::-webkit-scrollbar {
-    display: none; /* Hide scrollbar */
+    display: none; 
 }
 
 /*------------skills--------------*/
 
 #skills {
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Arrange children in a column */
-    align-items: center; /* Center horizontally */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
     margin-top: 0%;
     padding: 5rem;
 }
 
 #skills h1 {
-    color: white; /* Fallback color */
-    font-size: 2rem; /* Font size */
+    color: white; 
+    font-size: 2rem; 
 }
 
 .myskills {
-    display: flex; /* Arrange items in a row */
-    flex-wrap: wrap; /* Allow wrapping to the next line */
-    justify-content: center; /* Center items horizontally */
-    gap: 5px; /* Space between items */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 5px; 
 }
 
 .skill-item {
-    flex: 0 0 90px; /* Flex-grow, flex-shrink, and flex-basis */
+    flex: 0 0 90px; 
     display: flex;
-    flex-direction: column; /* Arrange logo and name in a column */
-    align-items: center; /* Center horizontally */
-    margin: 10px; /* Space between items */
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    flex-direction: column; 
+    align-items: center; 
+    margin: 10px; 
+    transition: transform 0.3s ease; 
 }
 
 .skill-item p {
-    margin: 0; /* Remove default margin */
-    font-size: 1rem; /* Adjust font size if needed */
-    color: black; /* Adjust text color as needed */
+    margin: 0; 
+    font-size: 1rem; 
+    color: black; 
 }
 
 .skill-item:hover {
-    transform: scale(1.2); /* Scale up to 110% of the original size */
+    transform: scale(1.2);
 }
 
 /*------------skills completed--------------*/
@@ -268,19 +268,19 @@ body ::-webkit-scrollbar {
 /*------------education--------------*/
 
 #education {
-    display: flex; /* Use flexbox to center items */
-    flex-direction: column; /* Arrange children in a column */
-    align-items: center; /* Center horizontally */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
     margin-top: 0%;
     margin-top: -5%;
-    padding: 5rem; /* Adjust padding as needed */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    padding: 5rem; 
+    box-sizing: border-box; 
 }
 
 #education h1 {
-    color: white; /* Text color for heading */
-    font-size: 2rem; /* Font size */
-    margin-bottom: 1rem; /* Space below the heading */
+    color: white; 
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
 }
 
 .university-link {
@@ -299,91 +299,90 @@ body ::-webkit-scrollbar {
 }
 
 .university {
-    display: flex; /* Use flexbox to align items horizontally */
-    align-items: flex-start; /* Align items at the top */
-    gap: 20px; /* Space between logo and description */
-    width: 100%; /* Full width to fit container */
+    display: flex; 
+    align-items: flex-start; 
+    gap: 20px;
+    width: 100%; 
 }
 
 .university img {
-    max-width: 200px; /* Limit logo width */
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s ease; /* Smooth transition for spinning */
+    max-width: 200px; 
+    height: auto;
+    transition: transform 0.3s ease; 
 }
 
 .univ_description {
     display: flex;
-    flex-direction: column; /* Arrange text vertically */
-    color: white; /* Text color for description */
+    flex-direction: column; 
+    color: white; 
 }
 
 .univ_description h2,
 .univ_description h3,
 .univ_description p {
-    margin: 0; /* Remove default margins */
-    color: white; /* Text color */
-}
+    margin: 0; 
+    color: white; 
 
 .univ_description h2 {
-    font-size: 1.5rem; /* Font size for the main title */
-    margin-bottom: 0.5rem; /* Space below the main title */
+    font-size: 1.5rem; 
+    margin-bottom: 0.5rem; 
     margin-top: 1rem;
 }
 
 .univ_description h3 {
-    font-size: 1.2rem; /* Font size for the subtitle */
-    margin-bottom: 0.5rem; /* Space below the subtitle */
+    font-size: 1.2rem; 
+    margin-bottom: 0.5rem; 
 }
 
 .univ_description p {
-    font-size: 1rem; /* Font size for the text */
-    line-height: 1.5; /* Improve readability */
-    margin-bottom: 0.5rem; /* Space below paragraphs */
+    font-size: 1rem; 
+    line-height: 1.5; 
+    margin-bottom: 0.5rem; 
 }
 
 .university-link:hover {
-    transform: scale(1.05); /* Scale up slightly on hover */
+    transform: scale(1.05); 
 }
 
 .university-link:hover img {
-    animation: spin 5s linear infinite; /* Apply spin animation */
+    animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
     from {
-        transform: rotate(0deg); /* Start from 0 degrees */
+        transform: rotate(0deg); 
     }
     to {
-        transform: rotate(360deg); /* Rotate to 360 degrees */
+        transform: rotate(360deg); 
     }
 }
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
     .university {
-        flex-direction: column; /* Arrange items in a column on smaller screens */
-        align-items: center; /* Center align items */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .university img {
-        max-width: 100px; /* Limit logo width on smaller screens */
+        max-width: 100px; 
     }
 
     .univ_description {
-        text-align: center; /* Center text on smaller screens */
-        width: 100%; /* Full width for description */
+        text-align: center; 
+        width: 100%;
     }
 
     .univ_description h2 {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        font-size: 1.2rem; 
     }
 
     .univ_description h3 {
-        font-size: 1rem; /* Adjust font size for smaller screens */
+        font-size: 1rem; 
     }
 
     .univ_description p {
-        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        font-size: 0.9rem; 
     }
 }
 
