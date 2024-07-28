@@ -1,9 +1,9 @@
 body{
     font-family: "Nunito", sans-serif;
     background-color: #f4f4f4;
-    background: linear-gradient(45deg, #ff6658, #ebf268); /* Gradient colors */
+    background: linear-gradient(45deg, #ff6658, #ebf268);
     background-size: 400% 400%;
-    animation: gradientAnimation 8s ease infinite; /* Animates the gradient */
+    animation: gradientAnimation 8s ease infinite;
     scroll-behavior: smooth;
 }
 
@@ -12,7 +12,7 @@ body{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }  
+}  
 
 @keyframes gradientAnimation {
     0% { background-position: 0% 0%; }
@@ -20,8 +20,6 @@ body{
     100% { background-position: 0% 0%; }
 }
 
-
-/*------------navbar--------------*/
 .navbar{
     position: fixed;
     top: 2%;
@@ -34,7 +32,7 @@ body{
 }
 
 .navbar a {
-    color: rgb(201, 201, 201); /* or use a hex code like #808080 */
+    color: rgb(201, 201, 201);
     text-decoration: none;
     transition: color 0.3s ease, background-color 0.3s ease
 }
@@ -44,11 +42,10 @@ body{
 }
 
 ul {
-    /*Removes the bullets*/
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
 
 .navbar{
     text-align: center;
@@ -61,23 +58,20 @@ ul {
     margin: 7px;
     font-size: 0.85em;
 }
-/*------------navbar completed--------------*/
-
-/*------------home--------------*/
 
 html, body {
-    height: 100%; 
-    margin: 0; 
+    height: 100%;
+    margin: 0;
     overflow-x: hidden;
 }
 
 #home {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
-    height: 100vh; 
-    width: 100vw; 
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -90,258 +84,224 @@ html, body {
 }
 
 #home p {
-    margin: 10px 0 0; 
-    font-size: 1.5em; 
+    margin: 10px 0 0;
+    font-size: 1.5em;
     color: white;
 }
 
-/*------------home completed--------------*/
-
-/*------------project--------------*/
-
-/* Ensure the section takes up full height and is centered */
 #projects {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; 
-    min-height: 100vh; 
+    justify-content: center;
+    min-height: 100vh;
     padding: 6rem 0;
 }
 
-/* Rainbow gradient animation for the h1 */
-/* @keyframes rainbow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-} */
-
 #projects h1 {
-    color: white; 
-    font-size: 2rem; 
-    /* background: linear-gradient(270deg, #ff0080, #ff8c00, #ffec00, #8cff00, #00ff8c, #00ecff, #0080ff, #8c00ff); */
-    /* background-size: 1600% 1600%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; */
-    /* animation: rainbow 5s ease infinite; */
+    color: white;
+    font-size: 2rem;
 }
 
-/* Container for the project cards */
 .project_container {
-    display: flex; 
-    flex-direction: column; 
-    width: 100%; 
-    max-width: 900px; 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
     min-width: none;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
-/* Each project card styling */
 .project {
-    display: flex; 
-    flex-direction: row; 
-    align-items: center; 
-    background: black; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 1rem 0;
-    padding: 1rem; 
-    border-radius: 20px; 
-    width: 100%; 
+    padding: 1rem;
+    border-radius: 20px;
+    width: 100%;
     box-sizing: border-box;
-    transition: background-color 0.5s ease; 
-    overflow: hidden; 
+    transition: background-color 0.5s ease;
+    overflow: hidden;
 }
 
-/* Hover effect for project cards */
 .project:hover {
-    background-color: #232323; /* Slightly darker color on hover */
+    background-color: #232323;
 }
 
-/* Ensure images fill the project card without changing the card size */
 .project img {
-    width: 60%; 
-    height: 350px; 
-    object-fit: cover; 
-    border-radius: 8px; 
-    transform: translateX(20%) translateY(10%) rotate(0deg); 
-    transition: transform 0.5s ease; 
+    width: 60%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    transform: translateX(20%) translateY(10%) rotate(0deg);
+    transition: transform 0.5s ease;
 }
 
-/* Slide image in to show 85% on hover */
 .project:hover img {
-    transform: translateX(10%) translateY(10%) rotate(-5deg); 
+    transform: translateX(10%) translateY(10%) rotate(-5deg);
 }
 
-/* Style for the project description */
 .project_description {
-    padding: 1rem; 
-    text-align: left; 
+    padding: 1rem;
+    text-align: left;
     width: 50%;
     color: white;
 }
 
 .project_description h2 {
-    margin: 0.5rem 0; 
-    font-size: 1.5rem; 
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
 }
 
 .project_description h3 {
-    margin: 0.5rem 0; 
-    font-size: 1.2rem; 
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
 }
 
 .project_description p {
-    margin: 0.5rem 0; 
-    font-size: 1rem; 
+    margin: 0.5rem 0;
+    font-size: 1rem;
 }
 
-/*------------project completed--------------*/
-
-/* Custom scrollbar styles for WebKit-based browsers (Chrome, Safari) */
 body ::-webkit-scrollbar {
-    width: 0px; /* Set scrollbar width to 0 for transparent appearance */
-    height: 0px; /* Set scrollbar height to 0 for transparent appearance */
+    width: 0px;
+    height: 0px;
 }
 
 body ::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0); 
+    background: rgba(0, 0, 0, 0);
 }
 
 body ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0); 
+    background: rgba(0, 0, 0, 0);
 }
 
-/* Custom scrollbar styles for Firefox */
 body {
-    scrollbar-width: none; 
+    scrollbar-width: none;
 }
 
-/* Hide scrollbar for other WebKit-based browsers */
 body ::-webkit-scrollbar {
-    display: none; 
+    display: none;
 }
-
-/*------------skills--------------*/
 
 #skills {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 0%;
     padding: 5rem;
 }
 
 #skills h1 {
-    color: white; 
-    font-size: 2rem; 
+    color: white;
+    font-size: 2rem;
 }
 
 .myskills {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 5px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
 }
 
 .skill-item {
-    flex: 0 0 90px; 
+    flex: 0 0 90px;
     display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    margin: 10px; 
-    transition: transform 0.3s ease; 
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    transition: transform 0.3s ease;
 }
 
 .skill-item p {
-    margin: 0; 
-    font-size: 1rem; 
-    color: black; 
+    margin: 0;
+    font-size: 1rem;
+    color: black;
 }
 
 .skill-item:hover {
     transform: scale(1.2);
 }
 
-/*------------skills completed--------------*/
-
-/*------------education--------------*/
-
 #education {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 0%;
     margin-top: -5%;
-    padding: 5rem; 
-    box-sizing: border-box; 
+    padding: 5rem;
+    box-sizing: border-box;
 }
 
 #education h1 {
-    color: white; 
-    font-size: 2rem; 
-    margin-bottom: 1rem; 
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .university-link {
-    display: flex; /* Use flexbox to align items horizontally */
-    align-items: center; /* Align items vertically centered */
-    background-color: black; /* Background color for the box */
-    padding: 20px; /* Padding inside the box */
-    border-radius: 8px; /* Rounded corners for the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better appearance */
-    width: 100%; /* Full width to fit container */
-    max-width: 900px; /* Optional: Limit maximum width */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-    text-decoration: none; /* Remove underline from the link */
-    color: inherit; /* Inherit text color from parent */
-    transition: transform 0.5s ease; /* Smooth transition for scaling */
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.5s ease;
 }
 
 .university {
-    display: flex; 
-    align-items: flex-start; 
+    display: flex;
+    align-items: flex-start;
     gap: 20px;
-    width: 100%; 
+    width: 100%;
 }
 
 .university img {
-    max-width: 200px; 
+    max-width: 200px;
     height: auto;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 .univ_description {
     display: flex;
-    flex-direction: column; 
-    color: white; 
+    flex-direction: column;
+    color: white;
 }
 
 .univ_description h2,
 .univ_description h3,
 .univ_description p {
-    margin: 0; 
-    color: white; 
+    margin: 0;
+    color: white;
+}
 
 .univ_description h2 {
-    font-size: 1.5rem; 
-    margin-bottom: 0.5rem; 
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
     margin-top: 1rem;
 }
 
 .univ_description h3 {
-    font-size: 1.2rem; 
-    margin-bottom: 0.5rem; 
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .univ_description p {
-    font-size: 1rem; 
-    line-height: 1.5; 
-    margin-bottom: 0.5rem; 
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
 }
 
 .university-link:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05);
 }
 
 .university-link:hover img {
@@ -350,80 +310,72 @@ body ::-webkit-scrollbar {
 
 @keyframes spin {
     from {
-        transform: rotate(0deg); 
+        transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg); 
+        transform: rotate(360deg);
     }
 }
 
-/* Media queries for responsive design */
 @media (max-width: 768px) {
     .university {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
     .university img {
-        max-width: 100px; 
+        max-width: 100px;
     }
 
     .univ_description {
-        text-align: center; 
+        text-align: center;
         width: 100%;
     }
 
     .univ_description h2 {
-        font-size: 1.2rem; 
+        font-size: 1.2rem;
     }
 
     .univ_description h3 {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 
     .univ_description p {
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
     }
 }
 
-/*------------education completed--------------*/
-
-/*------------resume--------------*/
-
-/*------------resume completed--------------*/
-
-/*------------contanct--------------*/
 #contact {
-    display: flex; /* Use flexbox for centering */
-    flex-direction: column; /* Arrange children in a column */
-    align-items: center; /* Center horizontally */
-    padding: 3rem; /* Padding around the section */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    box-sizing: border-box;
 }
 
 #contact h1 {
-    color: white; /* Text color for the heading */
-    font-size: 2.5rem; /* Font size */
-    margin-bottom: 1rem; /* Space below the heading */
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 #contact p {
-    color: #333; /* Text color for the paragraph */
-    font-size: 1.1rem; /* Font size */
-    text-align: center; /* Center text alignment */
-    margin-bottom: 2rem; /* Space below the paragraph */
+    color: #333;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
 .container {
-    max-width: 600px; /* Limit the maximum width of the form */
-    width: 100%; /* Full width to fit container */
+    max-width: 600px;
+    width: 100%;
 }
 
 form {
-    display: flex; /* Use flexbox for form layout */
-    flex-direction: column; /* Arrange form elements in a column */
-    padding: 0rem; /* Padding inside the form */
-    border-radius: 14px; /* Rounded corners for the form */
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+    border-radius: 14px;
 }
 
 input, textarea {
@@ -431,35 +383,25 @@ input, textarea {
     color: gray;
     border: none;
     border-radius: 14px;
-    padding: 0.75rem; /* Padding inside form elements */
-    margin-bottom: 1rem; /* Space below form elements */
-    font-size: 1rem; /* Font size */
-    width: 100%; /* Full width of the container */
-    box-sizing: border-box; /* Include padding and border in element's total width */
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 textarea {
-    resize: vertical; /* Allow vertical resizing only */
-    min-height: 150px; /* Minimum height for the textarea */
+    resize: vertical;
+    min-height: 150px;
 }
 
 button {
-    background-color: black; /* Background color for the button */
-    color: white; /* Text color for the button */
-    border: none; /* Remove border */
-    border-radius: 4px; /* Rounded corners for the button */
-    padding: 0.75rem 1.5rem; /* Padding inside the button */
-    font-size: 1rem; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions for background color and transform */
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform
 }
-
-button:hover {
-    background-color: rgb(44, 44, 44); /* Darker background color on hover */
-    transform: scale(1.03);
-}
-
-button:focus {
-    outline: none; /* Remove default focus outline */
-}
-/*------------contanct completed--------------*/
